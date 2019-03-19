@@ -1,6 +1,6 @@
 {
   "name": "@elunic/ecs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The elunic coding styles",
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
@@ -15,12 +15,12 @@
     "README.md"
   ],
   "bin": {
-    "ecs": "build/src/cli.js"
+    "ecs": "dist/src/cli.js"
   },
   "license": "MIT",
   "scripts": {
     "test": "npm run clean && npm run compile && jasmine 'dist/test/**/*.spec.js'",
-    "test:watch": "npm run clean && npx tsc-watch --onSuccess \"jasmine 'dist/test/**/*.spec.js'\" --preserveWatchOutput -w --noEmitOnError false",
+    "test:watch": "npm run clean && tsc-watch --onSuccess \"jasmine 'dist/test/**/*.spec.js'\" --preserveWatchOutput -w --noEmitOnError false",
     "check": "tslint -p . && prettier --config ./prettier.config.js --check 'src/**/*.ts' 'test/**/*.ts'",
     "clean": "shx rm -rf dist",
     "compile": "npm run clean && echo Compiling... && tsc -p .",
@@ -74,15 +74,16 @@
     "shx": "^0.3.2",
     "sinon": "^7.2.3",
     "tsc-watch": "^1.1.34",
+    "tslint": "^5.14.0",
     "typescript": "^3.0.0"
   },
   "dependencies": {
-    "tslint": "^5.14.0",
     "prettier": "^1.16.1",
     "gts": "^0.9.0",
     "tslint-config-prettier": "^1.17.0"
   },
   "peerDependencies": {
+    "tslint": "^5.14.0",
     "typescript": "^3.0.0"
   },
   "publishConfig": {
