@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "./tslint.json"
+  ],
+  "rules": {
+    "ordered-imports": [
+      true,
+      {
+        "grouped-imports": true
+      }
+    ],
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "no-unnecessary-initializer": true
+  }
+}

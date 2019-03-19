@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "gts/tslint.json",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "format": "codeFrame"
+  },
+  "rules": {
+    "variable-name": false,
+    "class-name": false,
+    "deprecation": {
+      "severity": "warn"
+    },
+    "interface-over-type-literal": true,
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "no-duplicate-super": true,
+    "no-empty-interface": true,
+    "no-eval": true,
+    "no-misused-new": true,
+    "no-non-null-assertion": true,
+    "no-redundant-jsdoc": true,
+    "no-shadowed-variable": true,
+    "no-switch-case-fall-through": true,
+    // Deprecation is contested (https://github.com/palantir/tslint/issues/4100). Much more practical
+    // than the tsc counterparts [wh]
+    "no-unused-variable": [
+      true,
+      {
+        "ignore-pattern": "(^logger$)"
+      }
+    ],
+    "unified-signatures": true
+  },
+  "jsRules": true
+}
