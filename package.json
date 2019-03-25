@@ -1,11 +1,12 @@
 {
   "name": "@elunic/ecs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "The elunic coding styles",
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
   "types": "dist/src/index.d.ts",
   "files": [
+    "commitlint/",
     "dist/src/",
     "editorconfig/",
     "prettier/",
@@ -55,6 +56,7 @@
     "typescript",
     "tslint",
     "prettier",
+    "commitlint",
     "styles",
     "ecs"
   ],
@@ -64,7 +66,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^7.3.2",
-    "@commitlint/config-conventional": "^7.3.1",
+    "@commitlint/config-conventional": "^7.5.0",
     "@types/jasmine": "^3.3.7",
     "@types/node": "^10.12.19",
     "@types/sinon": "^7.0.5",
@@ -83,6 +85,7 @@
     "tslint-config-prettier": "^1.17.0"
   },
   "peerDependencies": {
+    "@commitlint/config-conventional": "^7.5.0",
     "tslint": "^5.14.0",
     "typescript": "^3.0.0"
   },

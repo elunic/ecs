@@ -14,6 +14,7 @@ The elunic coding styles
     - [`tslint`](#tslint)
     - [Prettier](#prettier)
     - [EditorConfig](#editorconfig)
+    - [`commitlint`](#commitlint)
   - [License](#license)
 
 ## Installation
@@ -69,6 +70,19 @@ module.exports = require('./prettier/prettier.config');
 * `editorconfig/.editorconfig`
 
 Must currently be included by copying it to your project root.
+
+### EditorConfig
+
+* `commitlint/index.js`
+
+Must currently be included by copying it to your project root.
+
+Example usage for your `/commitlint.config.js`:
+```javascript
+module.exports = {
+	extends: ['@elunic/ecs/commitlint'],
+};
+```
 
 
 ## License
