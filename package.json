@@ -1,13 +1,9 @@
 {
   "name": "@elunic/ecs",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "The elunic coding styles",
-  "main": "dist/src/index.js",
-  "typings": "dist/src/index.d.ts",
-  "types": "dist/src/index.d.ts",
   "files": [
     "commitlint/",
-    "dist/src/",
     "editorconfig/",
     "prettier/",
     "tsconfig/",
@@ -15,18 +11,10 @@
     "LICENSE",
     "README.md"
   ],
-  "bin": {
-    "ecs": "dist/src/cli.js"
-  },
   "license": "MIT",
   "scripts": {
-    "test": "npm run clean && npm run compile && jasmine 'dist/test/**/*.spec.js'",
-    "test:watch": "npm run clean && tsc-watch --onSuccess \"jasmine 'dist/test/**/*.spec.js'\" --preserveWatchOutput -w --noEmitOnError false",
-    "check": "tslint -p . && prettier --config ./prettier.config.js --check 'src/**/*.ts' 'test/**/*.ts'",
-    "clean": "shx rm -rf dist",
-    "compile": "npm run clean && echo Compiling... && tsc -p .",
-    "compile:prod": "npm run clean && echo Compiling... && tsc -p tsconfig.prod.json",
-    "fix": "tslint -p . --fix && prettier --config ./prettier.config.js --write 'src/**/*.ts' 'test/**/*.ts'",
+    "check": "prettier --config ./prettier.config.js --check './**/*.js'",
+    "fix": "prettier --config ./prettier.config.js --write --check './**/*.js'",
     "precommit": "lint-staged"
   },
   "husky": {
@@ -36,13 +24,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.ts": [
-      "tslint -p . --fix",
-      "prettier --config ./prettier.config.js --write",
-      "git add"
-    ],
-    "test/**/*.ts": [
-      "tslint -p . --fix",
+    "**/*.js": [
       "prettier --config ./prettier.config.js --write",
       "git add"
     ]
@@ -67,17 +49,9 @@
   "devDependencies": {
     "@commitlint/cli": "^7.3.2",
     "@commitlint/config-conventional": "^7.5.0",
-    "@types/jasmine": "^3.3.7",
-    "@types/node": "^10.12.19",
-    "@types/sinon": "^7.0.5",
     "husky": "^1.3.1",
     "jasmine": "^3.3.1",
-    "lint-staged": "^8.1.0",
-    "shx": "^0.3.2",
-    "sinon": "^7.2.3",
-    "tsc-watch": "^1.1.34",
-    "tslint": "^5.14.0",
-    "typescript": "^3.0.0"
+    "lint-staged": "^8.1.0"
   },
   "dependencies": {
     "prettier": "^1.16.1",

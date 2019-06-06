@@ -62,7 +62,7 @@ Example usage for your `/tslint.json`:
 
 Example usage for your `/prettier.config.js`:
 ```javascript
-module.exports = require('./prettier/prettier.config');
+module.exports = require('@elunic/ecs/prettier');
 ```
 
 ### EditorConfig

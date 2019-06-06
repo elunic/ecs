@@ -1,1 +1,4 @@
-dist/test/
+.editorconfig
+.travis.yml
+commitlint.config.js
+prettier.config.js
