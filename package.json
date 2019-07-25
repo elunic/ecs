@@ -1,6 +1,6 @@
 {
   "name": "@elunic/ecs",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "The elunic coding styles",
   "files": [
     "commitlint/",
