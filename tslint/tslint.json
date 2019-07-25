@@ -10,7 +10,7 @@
     "variable-name": false,
     "class-name": false,
     "deprecation": {
-      "severity": "warn"
+      "severity": "warning"
     },
     "interface-over-type-literal": true,
     "no-console": [
