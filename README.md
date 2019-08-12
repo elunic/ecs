@@ -12,6 +12,7 @@ The elunic coding styles
   - [Usage](#usage)
     - [`tsconfig`](#tsconfig)
     - [`tslint`](#tslint)
+      - [`tslint-react` `peerDependency` for React](#tslint-react-peerdependency-for-react)
     - [Prettier](#prettier)
     - [EditorConfig](#editorconfig)
     - [`commitlint`](#commitlint)
@@ -46,6 +47,10 @@ Example usage for your `/tsconfig.json`:
 * `tslint/tslint.fix.json`
 * `tslint/tslint-angular7.json`
 * `tslint/tslint-angular7.fix.json`
+* `tslint/tslint-angular8.json`
+* `tslint/tslint-angular8.fix.json`
+* `tslint/tslint-react16.json`
+* `tslint/tslint-react16.fix.json`
 
 Example usage for your `/tslint.json`:
 ```json
@@ -55,6 +60,10 @@ Example usage for your `/tslint.json`:
   }
 }
 ```
+
+#### `tslint-react` `peerDependency` for React
+
+For React, the `tslint-react` `peerDependency` is required. 
 
 ### Prettier
 

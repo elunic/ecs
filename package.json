@@ -1,6 +1,6 @@
 {
   "name": "@elunic/ecs",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "The elunic coding styles",
   "files": [
     "commitlint/",
@@ -61,6 +61,7 @@
   "peerDependencies": {
     "@commitlint/config-conventional": ">=7.5.0 <9.0.0",
     "tslint": "^5.18.0",
+    "tslint-react": "^4.0.0",
     "typescript": "^3.0.0"
   },
   "publishConfig": {

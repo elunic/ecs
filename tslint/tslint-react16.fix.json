@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "./tslint.fix.json",
+    "./tslint-react16.json"
+  ]
+}
