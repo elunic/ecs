@@ -12,6 +12,8 @@ The elunic coding styles
   - [Usage](#usage)
     - [`tsconfig`](#tsconfig)
     - [`eslint`](#eslint)
+    - [Default config (non-fix)](#default-config-non-fix)
+    - [Fix config](#fix-config)
     - [`tslint`](#tslint)
       - [`tslint-react` `peerDependency` for React](#tslint-react-peerdependency-for-react)
     - [Prettier](#prettier)
@@ -22,7 +24,7 @@ The elunic coding styles
 ## Installation
 
 ```bash
-$ npm install @elunic/ecs
+$ npm i -D @elunic/ecs
 ```
 
 ## Usage
@@ -43,17 +45,31 @@ Example usage for your `/tsconfig.json`:
 
 ### `eslint`
 
-There is currently no `eslint` configuration for Angular, as Angular itself
+**Note**: The eslint config is located in a separate package, `@elunic/eslint-config-ecs` due to the
+namespacing requirements for sharing `eslint` configs. That package is a dependency of this package
+and so is automatically installed alongside this one.
+
+**Note for Angular projects**: There is currently no `eslint` configuration for Angular, as Angular itself
 has not yet switched to using `eslint`. For Angular projects, `tslint` should still be used.
 
-- `eslint/.eslintrc.json`
-- `eslint/.eslintrc.fix.json`
+### Default config (non-fix)
 
 Example usage for your `/.eslintrc.json`:
 
 ```json
 {
-  "extends": "@elunic/ecs/eslint/.eslintrc.json",
+  "extends": "@elunic/eslint-config-ecs",
+  "rules": {}
+}
+```
+
+### Fix config
+
+Example usage for your `/.eslintrc.fix.json`:
+
+```json
+{
+  "extends": "@elunic/eslint-config-ecs/fix",
   "rules": {}
 }
 ```
