@@ -1,6 +1,6 @@
 {
   "name": "@elunic/ecs",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "The elunic coding styles",
   "files": [
     "commitlint/",
@@ -56,7 +56,7 @@
   "dependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@elunic/eslint-config-ecs": "^0.1.1",
+    "@elunic/eslint-config-ecs": "^0.1.2",
     "gts": "^0.9.0",
     "prettier": "^1.19.1",
     "tslint": "^6.0.0",
