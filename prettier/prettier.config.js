@@ -1,10 +1,1 @@
-module.exports = {
-  printWidth: 100,
-  tabWidth: 2,
-  singleQuote: true,
-  trailingComma: 'all',
-  semi: true,
-  bracketSpacing: true,
-  arrowParens: 'avoid',
-  endOfLine: 'lf',
-};
+module.exports = require('@elunic/ecs-prettier');

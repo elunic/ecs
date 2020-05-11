@@ -10,10 +10,11 @@ The elunic coding styles
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
+    - [Single packages vs. all-in-package](#single-packages-vs-all-in-package)
     - [`tsconfig`](#tsconfig)
     - [`eslint`](#eslint)
-    - [Default config (non-fix)](#default-config-non-fix)
-    - [Fix config](#fix-config)
+      - [Default config (non-fix)](#default-config-non-fix)
+      - [Fix config](#fix-config)
     - [`tslint`](#tslint)
       - [`tslint-react` `peerDependency` for React](#tslint-react-peerdependency-for-react)
     - [Prettier](#prettier)
@@ -28,6 +29,19 @@ $ npm i -D @elunic/ecs
 ```
 
 ## Usage
+
+### Single packages vs. all-in-package
+
+This is really only a meta-package/abstraction package that includes the component packages:
+
+* `@elunic/ecs-prettier`
+* `@elunic/ecs-tsconfig`
+* `@elunic/ecs-tslint`
+* `@elunic/ecs-commitlint`
+* `@elunic/eslint-config-ecs`
+
+If you only require specific styles, including only those might be a good idea, for example to reduce
+dependency exposure (for `npm audit`) or to get less `peerDependency` messages.
 
 ### `tsconfig`
 
@@ -52,7 +66,7 @@ and so is automatically installed alongside this one.
 **Note for Angular projects**: There is currently no `eslint` configuration for Angular, as Angular itself
 has not yet switched to using `eslint`. For Angular projects, `tslint` should still be used.
 
-### Default config (non-fix)
+#### Default config (non-fix)
 
 Example usage for your `/.eslintrc.json`:
 
@@ -63,7 +77,7 @@ Example usage for your `/.eslintrc.json`:
 }
 ```
 
-### Fix config
+#### Fix config
 
 Example usage for your `/.eslintrc.fix.json`:
 

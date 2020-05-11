@@ -1,6 +1,5 @@
 {
   "extends": [
-    "./tslint.fix.json",
-    "./tslint-react16.json"
+    "@elunic/ecs-tslint/tslint-react16.fix.json"
   ]
 }

@@ -1,9 +1,5 @@
 {
   "extends": [
-    "./tslint.fix.json",
-    "./tslint-angular8.json"
-  ],
-  "rules": {
-    "template-banana-in-box": true
-  }
+    "@elunic/ecs-tslint/tslint-angular8.fix.json"
+  ]
 }

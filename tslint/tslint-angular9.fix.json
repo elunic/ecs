@@ -1,5 +1,5 @@
 {
   "extends": [
-    "./tslint-angular8.fix.json"
+    "@elunic/ecs-tslint/tslint-angular9.fix.json"
   ]
 }
