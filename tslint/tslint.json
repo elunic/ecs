@@ -1,6 +1,6 @@
 {
   "extends": [
-    "gts/tslint.json",
+    "./tslint-gts.json",
     "tslint-config-prettier"
   ],
   "linterOptions": {
