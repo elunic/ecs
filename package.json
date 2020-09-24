@@ -59,7 +59,7 @@
     "@elunic/eslint-config-ecs": "^0.1.2",
     "@elunic/ecs-prettier": "^0.1.2",
     "@elunic/ecs-tsconfig": "^0.1.0",
-    "@elunic/ecs-tslint": "^0.1.0",
+    "@elunic/ecs-tslint": "^0.1.1",
     "@elunic/ecs-commitlint": "^0.1.0"
   },
   "publishConfig": {
